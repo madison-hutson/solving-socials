@@ -343,6 +343,23 @@ type: Short description (imperative mood)
 Co-Authored-By: Claude <noreply@anthropic.com>
 ```
 
+### Multi-line Commits (PowerShell)
+
+This project uses PowerShell. For multi-line commit messages:
+
+```powershell
+# Multi-line commit message in PowerShell
+git commit -m "feat: Add persona management
+
+- Create persona CRUD operations
+- Add validation for required fields
+- Include AI disclosure requirement
+
+Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>"
+```
+
+**Note:** PowerShell allows multi-line strings directly in double quotes. No HEREDOC needed.
+
 ### Commit Types
 
 | Type | Use For |
