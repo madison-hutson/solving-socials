@@ -1,0 +1,40 @@
+{
+  "name": "solving-socials",
+  "version": "0.1.0",
+  "description": "Research platform for optimizing transparent AI social media personas - exploring algorithmic approaches to social media growth with full AI disclosure",
+  "type": "module",
+  "scripts": {
+    "dev": "echo \"Add your dev command here\" && exit 1",
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "tsc --noEmit",
+    "check:file-length": "node scripts/check-file-length.js",
+    "precommit": "npm run typecheck && npm run lint && npm run check:file-length && npm test",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.0.0",
+    "@types/react": "^19.2.8",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^9.17.0",
+    "eslint-config-prettier": "^9.0.0",
+    "glob": "^10.0.0",
+    "husky": "^9.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0",
+    "typescript-eslint": "^8.18.0",
+    "vitest": "^2.0.0"
+  },
+  "dependencies": {
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  }
+}
