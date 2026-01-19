@@ -10,13 +10,13 @@
 
 ### Persona Matrix
 
-| ID | Niche | Tone | Has Face | Purpose |
-|----|-------|------|----------|---------|
-| A | Gaming | Earnest | Yes | Baseline earnest |
-| B | Gaming | Ironic/Shitpost | Yes | Tone comparison (vs A) |
-| C | Lifestyle | Earnest | Yes | Niche comparison (vs A) |
-| D | Trend-reactive | Adaptive | Yes | Reactive vs defined |
-| E | Trend-reactive | Adaptive | No (abstract/logo) | Face hypothesis control |
+| ID | Name | Handle | Niche | Tone | Visual |
+|----|------|--------|-------|------|--------|
+| A | Evan | @evan.exe | Gaming | Earnest | Mid-20s, warm, CohhCarnage energy |
+| B | Sophia | @sofiashitposts | Gaming | Ironic | Femboy, stylized semi-realistic, impish |
+| C | Luca | @lucalives | Lifestyle | Earnest | Mediterranean, lean/toned, wellness bro |
+| D | Jake | @jaketh3guy | Trend-reactive | Adaptive | Aggressively average, forgettable-handsome |
+| E | Flux | @fluxfeed | Trend-reactive | Adaptive | Minimalist, monochrome + accent, no face |
 
 ### Controlled Variables (Same Across All)
 
