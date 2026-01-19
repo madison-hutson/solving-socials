@@ -1,0 +1,39 @@
+# Persona E - Trend-Reactive (No Face / Abstract)
+
+# TODO: Fill in using _template.yaml as reference
+
+id: "persona_e"
+name: "TBD"
+handle: "TBD"
+
+niche: "trend-reactive"
+tone: "adaptive"
+has_face: false  # KEY DIFFERENCE FROM D
+
+# Key differentiators:
+# - Same strategy as D, but NO visual persona
+# - Abstract logo/brand identity instead of AI face
+# - Tests the "face hypothesis": Does visual identity matter?
+
+# Purpose in experiment:
+# - Direct comparison to D
+# - Isolates one variable: face vs no face
+# - Same content strategy, different presentation
+
+# Visual identity:
+# - Abstract logo or geometric design
+# - Consistent color palette
+# - No character/avatar
+# - Text-focused content or faceless visuals
+
+# Content considerations:
+# - Can't do "reaction" style content as easily
+# - More template/text-on-screen approach
+# - Brand consistency through colors/fonts, not face
+
+# Questions this persona answers:
+# - Do people need a "face" to connect with an account?
+# - Does visual identity affect growth rate?
+# - Does engagement quality differ?
+
+# See _template.yaml for full spec structure

@@ -1,0 +1,35 @@
+# Persona D - Trend-Reactive (With Face)
+
+# TODO: Fill in using _template.yaml as reference
+
+id: "persona_d"
+name: "TBD"
+handle: "TBD"
+
+niche: "trend-reactive"
+tone: "adaptive"
+has_face: true
+
+# Key differentiators:
+# - No fixed niche—follows whatever is trending
+# - Chameleon tone (adapts to trend style)
+# - Has consistent visual identity (face)
+# - Tests: Can reactivity beat consistency?
+
+# Purpose in experiment:
+# - Compare to A/B/C: defined identity vs reactive
+# - Compare to E: same strategy, with vs without face
+# - Answers: Does having a "personality" constrain growth?
+
+# Content strategy:
+# - Monitor trending audio, formats, topics daily
+# - Jump on trends within 24-48 hours
+# - No core "topic"—just what's hot
+# - Personality comes through visual identity and engagement style
+
+# Voice notes:
+# - Adapts to match trend energy
+# - Can be earnest or ironic depending on trend
+# - Consistent personality through replies/engagement
+
+# See _template.yaml for full spec structure

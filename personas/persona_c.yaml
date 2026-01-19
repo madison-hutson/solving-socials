@@ -1,0 +1,30 @@
+# Persona C - Earnest Lifestyle
+
+# TODO: Fill in using _template.yaml as reference
+
+id: "persona_c"
+name: "TBD"
+handle: "TBD"
+
+niche: "lifestyle"
+tone: "earnest"
+has_face: true
+
+# Key differentiators from Persona A:
+# - Different niche, same earnest tone
+# - Lifestyle content: aesthetics, routines, wellness, productivity
+# - More visually-driven content
+# - Aspirational but approachable
+
+# Purpose in experiment:
+# - Isolates niche variable (compare to A)
+# - Same earnest tone, different subject matter
+# - Tests if gaming vs lifestyle responds differently to same approach
+
+# Voice notes:
+# - Warm and genuine
+# - Shares personal "reflections" (AI perspective on life)
+# - Curated but not fake
+# - Encourages rather than flexes
+
+# See _template.yaml for full spec structure

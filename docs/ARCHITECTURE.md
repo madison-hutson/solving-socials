@@ -28,7 +28,7 @@
 
 ```
 /
-├── src/
+├── src/                     # Application source code
 │   ├── App.tsx              # Root application component
 │   ├── types/               # Type definitions
 │   │   ├── index.ts         # Type exports
@@ -38,12 +38,33 @@
 │   ├── api/                 # API route handlers
 │   ├── db/                  # Database layer
 │   └── utils/               # Utility functions
-├── tests/
+├── personas/                # Persona specification files (YAML)
+│   ├── _template.yaml       # Template for new personas
+│   ├── persona_a.yaml       # Gaming/Earnest
+│   ├── persona_b.yaml       # Gaming/Ironic
+│   ├── persona_c.yaml       # Lifestyle/Earnest
+│   ├── persona_d.yaml       # Trend-reactive/Face
+│   └── persona_e.yaml       # Trend-reactive/No Face
+├── assets/                  # Visual assets per persona
+│   └── persona_X/           # Reference images, logos
+├── content/                 # Content pipeline
+│   ├── generated/           # LLM-generated drafts
+│   └── published/           # Posted content archive
+├── tracking/                # Performance data
+│   ├── posts.csv            # Per-post metrics
+│   └── weekly_metrics.csv   # Weekly rollups
+├── analysis/                # Weekly analysis reports
+│   └── _template.md         # Analysis template
+├── tests/                   # Test files
 │   ├── endpoint-inventory.json
 │   ├── component-inventory.json
 │   └── e2e/
 ├── docs/                    # Documentation
-└── scripts/                 # Build/check scripts
+│   ├── platforms/           # Platform-specific intelligence
+│   └── EXPERIMENT.md        # Experiment design & methodology
+└── scripts/                 # Build/automation scripts
+    ├── check-file-length.js # 300-line enforcer
+    └── generate_content.py  # Content generation pipeline
 ```
 
 ## Data Sources
