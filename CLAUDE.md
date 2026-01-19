@@ -169,3 +169,4 @@ npm test
 | `docs/TASKS.md` | Current work tracking | Session start, after completing work |
 | `docs/ROADMAP.md` | Planned features | When prioritizing work |
 | `docs/GLOSSARY.md` | Terminology definitions | When unfamiliar terms appear |
+| `docs/platforms/*.md` | Platform-specific intelligence (Instagram, etc.) | When planning content strategy |
