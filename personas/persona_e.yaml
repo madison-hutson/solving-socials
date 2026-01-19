@@ -164,3 +164,51 @@ dm_policy: |
 # - More text-on-screen, template-based
 # - Brand consistency through colors/fonts, not face
 # - Curation energy vs personal energy
+
+# ============================================
+# CONTENT FORMAT
+# ============================================
+
+primary_format: "motion_graphics_kinetic_text"
+
+content_approach: |
+  No face by design—compensates with stronger visual design.
+  Motion graphics, kinetic typography, clean brand aesthetic.
+  The visual brand IS the identity. Curation energy, not personal energy.
+
+format_breakdown:
+  reels: 90%   # Visual-first trending content
+  carousels: 10%  # Curated roundups
+
+reel_formula:
+  - Clean motion graphic background
+  - Bold kinetic typography (text animates in)
+  - Curated trending topic, minimal commentary
+  - Ambient/electronic audio
+  - 10-15 seconds
+
+content_types:
+  - "Trend roundups with kinetic text"
+  - "Quote graphics with motion"
+  - "Viral moment curation"
+  - "Text-on-screen trending formats"
+  - "Aesthetic data visualizations"
+
+brand_assets_needed:
+  - Logo variations (different sizes, placements)
+  - Template backgrounds (black/white with electric blue accent)
+  - Kinetic text presets
+  - Transition templates
+  - Color-consistent motion elements
+
+visual_system:
+  background: "#0a0a0a (near-black) or #ffffff (white)"
+  accent: "#00d4ff (electric blue)"
+  typography: "Swiss-design influenced, clean sans-serif"
+  motion: "Smooth, minimal, intentional"
+
+tools:
+  - "After Effects or CapCut for motion graphics"
+  - "Canva for quick template-based content"
+  - "Kinetic typography presets"
+  - "Ambient/electronic audio library"

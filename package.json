@@ -4,7 +4,7 @@
   "description": "Research platform for optimizing transparent AI social media personas - exploring algorithmic approaches to social media growth with full AI disclosure",
   "type": "module",
   "scripts": {
-    "dev": "echo \"Add your dev command here\" && exit 1",
+    "dev": "vite",
     "build": "tsc",
     "test": "vitest run",
     "test:watch": "vitest",
@@ -34,7 +34,19 @@
     "vitest": "^2.0.0"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.3.7",
+    "@mui/material": "^7.3.7",
+    "@mui/x-date-pickers": "^8.25.0",
+    "@supabase/supabase-js": "^2.90.1",
+    "@vitejs/plugin-react": "^5.1.2",
+    "date-fns": "^4.1.0",
     "react": "^19.2.3",
-    "react-dom": "^19.2.3"
+    "react-dom": "^19.2.3",
+    "react-router-dom": "^7.12.0",
+    "recharts": "^3.6.0",
+    "vite": "^5.4.21",
+    "yaml": "^2.8.2"
   }
 }

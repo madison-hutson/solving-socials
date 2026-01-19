@@ -6,28 +6,24 @@
  */
 
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import {
+  DashboardPage,
+  MetricsEntryPage,
+  CalendarPage,
+  AnalyticsPage,
+  ContentGenPage,
+} from '@/pages';
 
-interface AppProps {
-  title?: string;
-}
-
-export function App({ title = 'Solving Socials' }: AppProps): React.ReactElement {
+export function App(): React.ReactElement {
   return (
-    <div className="app">
-      <header className="app-header">
-        <h1>{title}</h1>
-        <p>AI Persona Research Platform</p>
-      </header>
-      <main className="app-main">
-        <section className="dashboard">
-          <h2>Dashboard</h2>
-          <p>Persona management and analytics coming soon.</p>
-        </section>
-      </main>
-      <footer className="app-footer">
-        <p>All personas on this platform openly disclose their AI nature.</p>
-      </footer>
-    </div>
+    <Routes>
+      <Route path="/" element={<DashboardPage />} />
+      <Route path="/metrics" element={<MetricsEntryPage />} />
+      <Route path="/calendar" element={<CalendarPage />} />
+      <Route path="/analytics" element={<AnalyticsPage />} />
+      <Route path="/content" element={<ContentGenPage />} />
+    </Routes>
   );
 }
 

@@ -3,12 +3,66 @@
   "_comment": "This file tracks all components. Tests will FAIL if components exist in code but not here.",
   "components": [
     {
+      "name": "main",
+      "path": "src/main.tsx",
+      "description": "Application entry point with providers",
+      "addedIn": "0.2.0"
+    },
+    {
       "name": "App",
       "path": "src/App.tsx",
-      "description": "Root application component - Solving Socials dashboard shell",
+      "description": "Root application component with routing",
       "addedIn": "0.1.0"
+    },
+    {
+      "name": "AppShell",
+      "path": "src/components/layout/AppShell.tsx",
+      "description": "Main layout wrapper with sidebar and header",
+      "addedIn": "0.2.0"
+    },
+    {
+      "name": "Header",
+      "path": "src/components/layout/Header.tsx",
+      "description": "Top header bar with page title and actions",
+      "addedIn": "0.2.0"
+    },
+    {
+      "name": "Sidebar",
+      "path": "src/components/layout/Sidebar.tsx",
+      "description": "Navigation sidebar for main sections",
+      "addedIn": "0.2.0"
+    },
+    {
+      "name": "DashboardPage",
+      "path": "src/pages/DashboardPage.tsx",
+      "description": "Overview of all personas with key metrics",
+      "addedIn": "0.2.0"
+    },
+    {
+      "name": "MetricsEntryPage",
+      "path": "src/pages/MetricsEntryPage.tsx",
+      "description": "Manual entry form for metrics snapshots",
+      "addedIn": "0.2.0"
+    },
+    {
+      "name": "CalendarPage",
+      "path": "src/pages/CalendarPage.tsx",
+      "description": "Content scheduling calendar view",
+      "addedIn": "0.2.0"
+    },
+    {
+      "name": "AnalyticsPage",
+      "path": "src/pages/AnalyticsPage.tsx",
+      "description": "Charts and performance comparison",
+      "addedIn": "0.2.0"
+    },
+    {
+      "name": "ContentGenPage",
+      "path": "src/pages/ContentGenPage.tsx",
+      "description": "Claude-powered content generation",
+      "addedIn": "0.2.0"
     }
   ],
   "lastUpdated": "2026-01-19",
-  "totalComponents": 1
+  "totalComponents": 10
 }

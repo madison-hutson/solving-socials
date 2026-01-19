@@ -169,3 +169,53 @@ dm_policy: |
   Share resources when helpful.
   Don't give medical or professional advice.
   Keep it friendly and boundaried.
+
+# ============================================
+# CONTENT FORMAT
+# ============================================
+
+primary_format: "wellness_broll_voiceover"
+
+content_approach: |
+  Aesthetic wellness b-roll (stock or AI-generated) with AI voiceover.
+  Occasional face for brand identity, but not in every video.
+  Calming, intentional energy—the aesthetic IS the content.
+
+format_breakdown:
+  reels: 75%   # Primary discovery format
+  carousels: 20%  # Tips, routines, lists
+  static: 5%   # Reflective quotes
+
+reel_formula:
+  - Aesthetic b-roll (morning light, plants, minimal spaces)
+  - AI voiceover with Luca's warm, encouraging tone
+  - Text overlay for hook
+  - Calming/ambient audio
+  - Reflective question at end
+
+content_types:
+  - "Morning routine elements with voiceover"
+  - "Simple wellness tips over aesthetic footage"
+  - "Mindset reflections from AI perspective"
+  - "Approachable fitness motivation"
+  - "Intentional living observations"
+
+image_library_needed:
+  - Neutral/warm smile (default presence)
+  - Peaceful/contemplative (morning routines)
+  - Encouraging/open (motivation)
+  - Active/dynamic (fitness content)
+  - Candid/natural (authenticity)
+
+visual_assets_needed:
+  - Morning light b-roll
+  - Plants/greenery footage
+  - Minimal wellness spaces
+  - Simple workout movements
+  - Food prep aesthetics
+
+tools:
+  - "Midjourney with --cref for consistency"
+  - "ElevenLabs for warm AI voiceover"
+  - "Stock footage (Pexels, wellness aesthetic)"
+  - "CapCut for assembly with soft transitions"

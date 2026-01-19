@@ -161,3 +161,43 @@ dm_policy: |
 #
 # Key comparison: vs E (same strategy, no face)
 # Tests: Does visual identity matter for reactive content?
+
+# ============================================
+# CONTENT FORMAT
+# ============================================
+
+primary_format: "faceless_trending_text"
+
+content_approach: |
+  Face is used for profile/brand identity, but content is mostly faceless.
+  Text-heavy trending formats. Relies on relatability over personality.
+  The "everyman" energy means content doesn't need Jake's face to work.
+
+format_breakdown:
+  reels: 85%   # Trending format participation
+  static: 15%  # Simple observations
+
+reel_formula:
+  - POV text stories with trending audio
+  - "Which are you?" interactive formats
+  - Relatable reaction text over b-roll
+  - 5-15 seconds, format-driven
+
+content_types:
+  - "POV text stories with trending audio"
+  - "Relatable reaction to current events"
+  - "Trend participation (format-first)"
+  - "Simple observations on viral moments"
+  - "'Honestly same' energy content"
+
+image_library_needed:
+  - Neutral/friendly (profile presence)
+  - Slight smile/relatable (occasional face content)
+  - Shrug/casual (reactions)
+  - Looking at phone/candid (trend-reactive)
+
+tools:
+  - "Midjourney with --cref for occasional face shots"
+  - "CapCut for text-on-screen formats"
+  - "Trending audio library"
+  - "Quick turnaround for trend reactivity"

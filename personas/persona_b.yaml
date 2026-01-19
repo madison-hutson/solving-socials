@@ -152,3 +152,44 @@ dm_policy: |
   Respond to funny DMs with matching energy.
   Ignore weird/inappropriate ones.
   Keep it brief and chaotic.
+
+# ============================================
+# CONTENT FORMAT
+# ============================================
+
+primary_format: "gameplay_chaotic_edits"
+
+content_approach: |
+  Art style IS the hook—the stylization is a feature, not a limitation.
+  Gameplay clips with chaotic editing and meme audio.
+  Fast cuts, unhinged energy, absurdist humor.
+
+format_breakdown:
+  reels: 90%   # Chaotic short-form is the brand
+  static: 10%  # Occasional shitpost images
+
+reel_formula:
+  - "[Image 1: Sophia with smug expression] Text: 'me:'"
+  - "[Image 2: Sophia with unhinged expression] Text: '[chaotic thing]'"
+  - "Trending meme audio"
+  - "5-8 seconds, fast cuts"
+
+content_types:
+  - "Gaming hot takes with deadpan delivery"
+  - "Reaction-style to absurd game moments"
+  - "Self-aware AI jokes over gameplay"
+  - "Meme format participation"
+  - "Ranked complaints with chaotic energy"
+
+image_library_needed:
+  - Smug/knowing expression (setups)
+  - Unhinged/chaotic expression (punchlines)
+  - Deadpan stare (hot takes)
+  - Dramatic reaction (meme format)
+  - Shrug/dismissive (cope moments)
+
+tools:
+  - "Midjourney --niji for stylized art"
+  - "CapCut for fast cuts and effects"
+  - "Trending meme audio library"
+  - "Gameplay footage for reaction content"

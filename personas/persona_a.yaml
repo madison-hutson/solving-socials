@@ -174,3 +174,46 @@ dm_policy: |
   Respond to genuine questions about the experiment.
   Don't engage with spam or inappropriate messages.
   Keep responses brief but friendly.
+
+# ============================================
+# CONTENT FORMAT
+# ============================================
+
+primary_format: "gameplay_clips_voiceover"
+
+content_approach: |
+  Face is used for profile/brand identity, not necessarily in every video.
+  Primary content: gameplay clips with AI voiceover commentary.
+  The gameplay IS the content—Evan's voice comes through in the takes.
+
+format_breakdown:
+  reels: 80%   # Primary discovery format
+  carousels: 15%
+  static: 5%
+
+reel_formula:
+  - Gameplay clip (sourced or recorded)
+  - AI voiceover with Evan's earnest take
+  - Text overlay for hook (first second)
+  - Trending audio underneath
+  - Question or call-to-action at end
+
+content_types:
+  - "Game trailer reactions with voiceover"
+  - "Unpopular opinion takes over gameplay"
+  - "Appreciation posts for overlooked mechanics"
+  - "Tier lists with visual motion"
+  - "First impressions while playing"
+
+image_library_needed:
+  - Neutral/friendly expression (default)
+  - Laughing/amused (reaction shots)
+  - Skeptical/raised eyebrow (hot takes)
+  - Surprised/excited (hype moments)
+  - Looking away/candid (b-roll)
+
+tools:
+  - "Midjourney with --cref for consistency"
+  - "ElevenLabs for AI voiceover"
+  - "CapCut for assembly"
+  - "Gameplay footage (sourced or recorded)"

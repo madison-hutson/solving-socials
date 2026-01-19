@@ -170,5 +170,6 @@ npm test
 | `docs/ROADMAP.md` | Planned features | When prioritizing work |
 | `docs/GLOSSARY.md` | Terminology definitions | When unfamiliar terms appear |
 | `docs/EXPERIMENT.md` | Experiment design, hypotheses, methodology | When planning or analyzing experiments |
+| `docs/CONTENT_STRATEGY.md` | Content formats, engagement mechanics, tools | When creating content for personas |
 | `docs/platforms/*.md` | Platform-specific intelligence (Instagram, etc.) | When planning content strategy |
-| `personas/*.yaml` | Persona specifications (voice, style, content) | When generating content for personas |
+| `personas/*.yaml` | Persona specifications (voice, style, content format) | When generating content for personas |

@@ -10,9 +10,11 @@
 
 ## Tech Stack
 
-- **Frontend:** React + TypeScript, Vite (planned)
-- **Backend:** Node.js/Express (planned, port 3000)
-- **Database:** SQLite (initial), PostgreSQL (future)
+- **Frontend:** React 19 + TypeScript + Vite
+- **UI Library:** Material UI 7 with Emotion
+- **Database:** Supabase (PostgreSQL + Auth + Real-time)
+- **Routing:** React Router 7
+- **Charts:** Recharts
 - **Testing:** Vitest (unit), Playwright (E2E)
 
 ## Application Modes/Features
@@ -29,14 +31,26 @@
 ```
 /
 ├── src/                     # Application source code
-│   ├── App.tsx              # Root application component
+│   ├── main.tsx             # Entry point with providers
+│   ├── App.tsx              # Root component with routing
+│   ├── vite-env.d.ts        # Vite environment types
 │   ├── types/               # Type definitions
 │   │   ├── index.ts         # Type exports
 │   │   └── persona.ts       # Persona, metrics, content types
+│   ├── lib/                 # External service clients
+│   │   ├── supabase.ts      # Supabase client
+│   │   └── database.types.ts # Supabase generated types
+│   ├── styles/              # Theme and global styles
+│   │   └── theme.ts         # MUI theme configuration
 │   ├── components/          # React UI components
+│   │   └── layout/          # Layout components (AppShell, Header, Sidebar)
+│   ├── pages/               # Page components
+│   │   ├── DashboardPage.tsx
+│   │   ├── MetricsEntryPage.tsx
+│   │   ├── CalendarPage.tsx
+│   │   ├── AnalyticsPage.tsx
+│   │   └── ContentGenPage.tsx
 │   ├── services/            # Business logic
-│   ├── api/                 # API route handlers
-│   ├── db/                  # Database layer
 │   └── utils/               # Utility functions
 ├── personas/                # Persona specification files (YAML)
 │   ├── _template.yaml       # Template for new personas
@@ -69,22 +83,22 @@
 
 ## Data Sources
 
-### Local Database (SQLite)
+### Supabase Database (PostgreSQL)
 
 | Table | Purpose |
 |-------|---------|
-| personas | AI persona profiles with platform, handle, disclosure |
-| metrics_snapshots | Point-in-time follower/engagement metrics |
-| content_posts | Content posted with performance data |
-| strategies | Persona strategy configurations |
+| personas | AI persona profiles (synced from YAML specs) |
+| metrics | Point-in-time follower/engagement snapshots |
+| posts | Content posted with performance data |
+| content_drafts | Claude-generated content awaiting posting |
 
-### External APIs (Future)
+### External APIs
 
-| Platform | Data | Notes |
-|----------|------|-------|
-| Twitter/X | Metrics via API | Requires API access |
-| Instagram | Metrics via API | Business account required |
-| TikTok | Metrics via API | Creator account required |
+| Service | Data | Notes |
+|---------|------|-------|
+| Supabase | Database, Auth, Real-time | Cloud PostgreSQL |
+| Claude API | Content generation | For on-brand captions |
+| Instagram | Metrics | Manual entry initially, API later |
 
 ## API Endpoints
 
@@ -134,9 +148,9 @@ interface PersonaMetrics {
 
 | Variable | Purpose | Required |
 |----------|---------|----------|
-| `DATABASE_URL` | SQLite database path | Yes |
-| `PORT` | Server port | No (default: 3000) |
-| `NODE_ENV` | Environment mode | No (default: development) |
+| `VITE_SUPABASE_URL` | Supabase project URL | Yes |
+| `VITE_SUPABASE_ANON_KEY` | Supabase anonymous key | Yes |
+| `VITE_CLAUDE_API_KEY` | Claude API key for content gen | No (Phase 6) |
 
 ---
 

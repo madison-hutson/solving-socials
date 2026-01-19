@@ -8,6 +8,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **Webapp Phase 1:** Dashboard foundation with Material UI
+  - Vite dev server configuration
+  - MUI dark theme with custom color palette
+  - Supabase client and database types
+  - Layout components (AppShell, Sidebar, Header)
+  - Page routing (Dashboard, Metrics, Calendar, Analytics, Content Gen)
+  - DashboardPage with persona overview cards
+
+### Infrastructure
+- Material UI 7 with Emotion styling
+- Supabase client integration
+- React Router 7 for navigation
+- Recharts for future analytics charts
+- date-fns for date handling
+
+---
+
+## [0.1.0] - 2026-01-19
+
+### Added
 - **Project Bootstrap:** Initial scaffolding from claude-project-scaffolding template
 - **Core Types:** Persona, PersonaMetrics, ContentPost, PersonaStrategy types
 - **App Component:** Root React component shell for dashboard
@@ -42,6 +62,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 | Version | Date | Highlights |
 |---------|------|------------|
+| 0.2.0 | 2026-01-19 | Webapp Phase 1 - Dashboard foundation |
 | 0.1.0 | 2026-01-19 | Initial bootstrap with type definitions |
 
 ---
