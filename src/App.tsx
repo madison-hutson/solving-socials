@@ -13,6 +13,7 @@ import {
   CalendarPage,
   AnalyticsPage,
   ContentGenPage,
+  SponsorshipPage,
 } from '@/pages';
 
 export function App(): React.ReactElement {
@@ -23,6 +24,7 @@ export function App(): React.ReactElement {
       <Route path="/calendar" element={<CalendarPage />} />
       <Route path="/analytics" element={<AnalyticsPage />} />
       <Route path="/content" element={<ContentGenPage />} />
+      <Route path="/sponsorships" element={<SponsorshipPage />} />
     </Routes>
   );
 }

@@ -6,7 +6,7 @@
 
 ---
 
-## Phase 1: Instagram (5 Personas)
+## Phase 1: Instagram (6 Personas)
 
 ### Persona Matrix
 
@@ -17,6 +17,9 @@
 | C | Luca | @lucalives | Lifestyle | Earnest | Mediterranean, lean/toned, wellness bro |
 | D | Jake | @jaketh3guy | Trend-reactive | Adaptive | Aggressively average, forgettable-handsome |
 | E | Flux | @fluxfeed | Trend-reactive | Adaptive | Minimalist, monochrome + accent, no face |
+| F | Marcus | @marcusplays_ | Gaming | Earnest | Mid-20s, warm, different appearance from A |
+
+**Note:** Persona F (Marcus) is a control duplicate of Persona A (Evan). Same niche, tone, and strategy but different visual identity. Purpose: measure how much growth variance is due to luck vs. strategy.
 
 ### Controlled Variables (Same Across All)
 
@@ -34,6 +37,9 @@
 | A vs C | Niche | Gaming vs lifestyle with same earnest approach? |
 | A/B/C vs D | Identity consistency | Does consistent identity beat trend-chasing? |
 | D vs E | Visual identity | Does having a face matter for growth? |
+| A vs F | Luck/variance | How much of growth is random vs. strategy? |
+
+**Luck Measurement (A vs F):** Both receive identical content strategy, posting schedule, and niche positioning. Any difference in growth between Evan and Marcus represents the luck component (algorithm timing, early virality, random exposure). This helps interpret all other comparisons—if A grows 2x faster than F with identical inputs, that's our baseline variance.
 
 ---
 

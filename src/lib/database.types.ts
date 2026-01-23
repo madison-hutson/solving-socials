@@ -170,6 +170,129 @@ export interface Database {
           created_at?: string;
         };
       };
+      sponsorships: {
+        Row: {
+          id: string;
+          persona_id: string;
+          inquiry_date: string;
+          brand_name: string;
+          brand_category: string | null;
+          contact_method: string | null;
+          inquiry_notes: string | null;
+          status: string;
+          decision_date: string | null;
+          decline_reason: string | null;
+          compensation_type: string | null;
+          compensation_value: number | null;
+          deliverables: string | null;
+          exclusivity_days: number | null;
+          post_id: string | null;
+          followers_at_inquiry: number | null;
+          engagement_rate_at_inquiry: number | null;
+          created_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id?: string;
+          persona_id: string;
+          inquiry_date: string;
+          brand_name: string;
+          brand_category?: string | null;
+          contact_method?: string | null;
+          inquiry_notes?: string | null;
+          status?: string;
+          decision_date?: string | null;
+          decline_reason?: string | null;
+          compensation_type?: string | null;
+          compensation_value?: number | null;
+          deliverables?: string | null;
+          exclusivity_days?: number | null;
+          post_id?: string | null;
+          followers_at_inquiry?: number | null;
+          engagement_rate_at_inquiry?: number | null;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: string;
+          persona_id?: string;
+          inquiry_date?: string;
+          brand_name?: string;
+          brand_category?: string | null;
+          contact_method?: string | null;
+          inquiry_notes?: string | null;
+          status?: string;
+          decision_date?: string | null;
+          decline_reason?: string | null;
+          compensation_type?: string | null;
+          compensation_value?: number | null;
+          deliverables?: string | null;
+          exclusivity_days?: number | null;
+          post_id?: string | null;
+          followers_at_inquiry?: number | null;
+          engagement_rate_at_inquiry?: number | null;
+          created_at?: string;
+          updated_at?: string;
+        };
+      };
+      follower_snapshots: {
+        Row: {
+          id: string;
+          persona_id: string;
+          snapshot_date: string;
+          follower_count: number;
+          created_at: string;
+        };
+        Insert: {
+          id?: string;
+          persona_id: string;
+          snapshot_date: string;
+          follower_count: number;
+          created_at?: string;
+        };
+        Update: {
+          id?: string;
+          persona_id?: string;
+          snapshot_date?: string;
+          follower_count?: number;
+          created_at?: string;
+        };
+      };
+      post_comments: {
+        Row: {
+          id: string;
+          post_id: string;
+          comment_text: string;
+          commenter_handle: string | null;
+          commented_at: string | null;
+          sentiment_score: number | null;
+          sentiment_label: string | null;
+          is_spam: boolean;
+          created_at: string;
+        };
+        Insert: {
+          id?: string;
+          post_id: string;
+          comment_text: string;
+          commenter_handle?: string | null;
+          commented_at?: string | null;
+          sentiment_score?: number | null;
+          sentiment_label?: string | null;
+          is_spam?: boolean;
+          created_at?: string;
+        };
+        Update: {
+          id?: string;
+          post_id?: string;
+          comment_text?: string;
+          commenter_handle?: string | null;
+          commented_at?: string | null;
+          sentiment_score?: number | null;
+          sentiment_label?: string | null;
+          is_spam?: boolean;
+          created_at?: string;
+        };
+      };
     };
     Views: Record<string, never>;
     Functions: Record<string, never>;

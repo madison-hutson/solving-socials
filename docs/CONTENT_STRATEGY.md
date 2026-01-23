@@ -184,6 +184,112 @@ Flux compensates with stronger visual design since there's no face to hook.
 
 ---
 
+## Automation Pipeline
+
+Goal: Fully autonomous content generation to avoid human bias affecting the experiment.
+
+### Pipeline Architecture
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  1. CONTENT GENERATION (Claude API)                              │
+│     Input:  persona spec + trends + past performance             │
+│     Output: 5 scripts per persona (25 total/week)                │
+└─────────────────────────────────────────────────────────────────┘
+                                 │
+                                 ▼
+┌─────────────────────────────────────────────────────────────────┐
+│  2. VOICE SYNTHESIS (ElevenLabs API)                             │
+│     Input:  scripts + persona voice_id                           │
+│     Output: MP3 voiceover files                                  │
+└─────────────────────────────────────────────────────────────────┘
+                                 │
+                                 ▼
+┌─────────────────────────────────────────────────────────────────┐
+│  3. VISUAL ASSET SELECTION (Random from library)                 │
+│     Evan/Sophia: assets/gameplay/*                               │
+│     Luca: assets/wellness-broll/*                                │
+│     Jake: assets/text-backgrounds/*                              │
+│     Flux: assets/motion-graphics/*                               │
+└─────────────────────────────────────────────────────────────────┘
+                                 │
+                                 ▼
+┌─────────────────────────────────────────────────────────────────┐
+│  4. VIDEO ASSEMBLY (ffmpeg or Remotion)                          │
+│     - Combine audio + visual                                     │
+│     - Auto-generate captions (Whisper)                           │
+│     - Add persona branding                                       │
+│     - Export MP4 (9:16, <60sec)                                  │
+└─────────────────────────────────────────────────────────────────┘
+                                 │
+                                 ▼
+┌─────────────────────────────────────────────────────────────────┐
+│  5. POSTING (Semi-manual initially)                              │
+│     Output folder + human uploads, or Buffer/Later API           │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Why Automation Matters
+
+Human curation introduces bias:
+- Which scripts "sound right" (taste)
+- Which gameplay clips to use (skill, game choice)
+- Which takes are "good enough" (judgment)
+
+Fully automated = cleaner experimental data on persona variables.
+
+---
+
+## Asset Library
+
+All footage lives in `/assets/`. See `assets/README.md` for full documentation.
+
+### Gameplay Sources (Evan/Sophia)
+
+Using royalty-free no-copyright clips avoids bias from personal gameplay.
+
+| Source | Content | URL |
+|--------|---------|-----|
+| Governare | Minecraft parkour, 4K vertical | youtube.com/@Governare-NoCopyrightGameplay |
+| No Copyright Gameplay | Subway Surfers, Temple Run | youtube.com/@NoCopyrightGameplay |
+| Various | GTA driving clips | Search "GTA no copyright" |
+
+### Wellness B-Roll (Luca)
+
+| Source | License | URL |
+|--------|---------|-----|
+| Pexels | Free, no attribution | pexels.com/videos |
+| Pixabay | Free, no attribution | pixabay.com/videos |
+| Coverr | Free commercial | coverr.co |
+
+Search: nature, meditation, calm, zen, forest, ocean, flowing water
+
+### Text Backgrounds (Jake)
+
+- Generate gradients with ffmpeg
+- Minimal animated patterns
+- Mixkit abstract clips
+
+### Motion Graphics (Flux)
+
+| Source | License | URL |
+|--------|---------|-----|
+| Mixkit | Free | mixkit.co/free-stock-video/ |
+| Videezy | Free w/ attribution | videezy.com |
+
+Search: abstract, technology, data, futuristic
+
+### Library Size (Minimum)
+
+- Gameplay: 10-15 clips (20-30 min total)
+- Wellness: 10-15 clips
+- Text backgrounds: 5-10
+- Motion graphics: 5-10
+
+Run `python scripts/download-footage.py` to check library status.
+
+---
+
 ## Experiment Note
 
 The hypothesis being tested: Maybe AI-image personas can't compete with real video. That's a valid finding. The experiment reveals the limit.

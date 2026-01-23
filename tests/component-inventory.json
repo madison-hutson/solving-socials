@@ -61,8 +61,44 @@
       "path": "src/pages/ContentGenPage.tsx",
       "description": "Claude-powered content generation",
       "addedIn": "0.2.0"
+    },
+    {
+      "name": "GrowthChart",
+      "path": "src/components/charts/GrowthChart.tsx",
+      "description": "Line chart showing follower growth over time",
+      "addedIn": "0.2.0"
+    },
+    {
+      "name": "EngagementChart",
+      "path": "src/components/charts/EngagementChart.tsx",
+      "description": "Bar chart comparing engagement rates",
+      "addedIn": "0.2.0"
+    },
+    {
+      "name": "PostFormDialog",
+      "path": "src/components/calendar/PostFormDialog.tsx",
+      "description": "Dialog form for creating new posts",
+      "addedIn": "0.2.0"
+    },
+    {
+      "name": "SponsorshipPage",
+      "path": "src/pages/SponsorshipPage.tsx",
+      "description": "Sponsorship tracking and analysis",
+      "addedIn": "0.2.0"
+    },
+    {
+      "name": "SponsorshipFormDialog",
+      "path": "src/components/sponsorship/SponsorshipFormDialog.tsx",
+      "description": "Dialog for logging sponsorship inquiries",
+      "addedIn": "0.2.0"
+    },
+    {
+      "name": "DecisionDialog",
+      "path": "src/components/sponsorship/DecisionDialog.tsx",
+      "description": "Dialog for recording sponsorship decisions",
+      "addedIn": "0.2.0"
     }
   ],
   "lastUpdated": "2026-01-19",
-  "totalComponents": 10
+  "totalComponents": 16
 }

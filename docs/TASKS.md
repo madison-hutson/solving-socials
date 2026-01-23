@@ -5,7 +5,7 @@ Tasks are organized by session/date for historical context.
 
 ---
 
-## Current Session: 2026-01-19
+## Current Session: 2026-01-20
 
 ### Active Tasks
 | Task | Status | Started | Notes |
@@ -13,6 +13,20 @@ Tasks are organized by session/date for historical context.
 | Webapp Phase 2-6 | PENDING | - | Dashboard, Metrics, Calendar, Analytics, Content Gen |
 
 ### Completed Tasks
+| Task | Completed | Duration | Notes |
+|------|-----------|----------|-------|
+| Asset library setup | - | 15 min | Created folder structure, README, download script |
+| Download gameplay footage | - | 10 min | 4 clips: 3 Minecraft parkour, 1 Subway Surfers (449 MB) |
+| Download wellness b-roll | - | 10 min | 7 clips from Mixkit: morning, workout, meditation, aesthetic (245 MB) |
+| Install ffmpeg | - | 2 min | Via winget for video/audio merging |
+
+---
+
+## Previous Sessions
+
+### Session: 2026-01-19
+
+**Completed:**
 | Task | Completed | Duration | Notes |
 |------|-----------|----------|-------|
 | Initialize Git repository | 09:28 | 1 min | Bootstrap step 0 |
@@ -24,12 +38,9 @@ Tasks are organized by session/date for historical context.
 | Run precommit checks | 09:53 | 3 min | All checks pass |
 | Create GitHub repo & push | 09:58 | 2 min | https://github.com/madison-hutson/solving-socials |
 | Webapp Phase 1: Foundation | 12:00 | 30 min | Vite, MUI, Supabase, routing, layout, dashboard |
-
----
-
-## Previous Sessions
-
-*No previous sessions - project bootstrapped today.*
+| Sponsorship tracking system | - | 45 min | DB tables, service, hooks, SponsorshipPage |
+| Add Marcus (Persona F) | - | 15 min | Control persona for luck/variance measurement |
+| Create ownership/sponsorship policy | - | 10 min | docs/OWNERSHIP_AND_SPONSORSHIP.md |
 
 ---
 
@@ -66,14 +77,14 @@ At the end of a session, move the current session to "Previous Sessions" and sta
 ## Task Statistics
 
 ### Current Sprint
-- Completed: 9
+- Completed: 4
 - In Progress: 0
 - Pending: 1
 - Blocked: 0
 
 ### All Time
-- Total Tasks Tracked: 10
-- Completion Rate: 90%
+- Total Tasks Tracked: 16
+- Completion Rate: 94%
 
 ---
 
@@ -84,4 +95,4 @@ At the end of a session, move the current session to "Previous Sessions" and sta
 - Historical tasks provide context for future sessions
 - Update this document after EVERY code change
 
-Last Updated: 2026-01-19
+Last Updated: 2026-01-20

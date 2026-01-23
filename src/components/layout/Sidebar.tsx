@@ -21,6 +21,7 @@ import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
+import HandshakeIcon from '@mui/icons-material/Handshake';
 
 const DRAWER_WIDTH = 240;
 
@@ -36,6 +37,7 @@ const navItems: NavItem[] = [
   { label: 'Calendar', path: '/calendar', icon: <CalendarMonthIcon /> },
   { label: 'Analytics', path: '/analytics', icon: <BarChartIcon /> },
   { label: 'Content Gen', path: '/content', icon: <AutoAwesomeIcon /> },
+  { label: 'Sponsorships', path: '/sponsorships', icon: <HandshakeIcon /> },
 ];
 
 export function Sidebar(): React.ReactElement {

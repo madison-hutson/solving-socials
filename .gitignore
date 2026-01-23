@@ -44,3 +44,13 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+
+# Video assets (too large for git - download via scripts/download-footage.py)
+assets/**/*.mp4
+assets/**/*.webm
+assets/**/*.mov
+assets/**/*.avi
+
+# Windows junk
+*.lnk
+nul

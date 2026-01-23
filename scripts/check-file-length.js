@@ -51,6 +51,7 @@ const IGNORE_FILE_PATTERNS = [
   'package-lock.json',
   'pnpm-lock.yaml',
   'yarn.lock',
+  'database.types.ts',  // Auto-generated Supabase types
 ];
 
 function shouldIgnore(filePath) {
